@@ -12,9 +12,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet"></link>
+    <link href="css/styles.css" rel="stylesheet"></link>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <link href="css/styles.css" rel="stylesheet"></link>
   </head>
   
   <body>
@@ -51,26 +51,77 @@
 
       <div class="row text-center">
         <div class="col-md-4">
-          <img src="./images/555x300" class="img-responsive" alt="LaserDB Screenshot">
+          <img src="./images/laserdb.jpg" class="img-responsive" alt="LaserDB Screenshot" data-toggle="modal" data-target="#laserdb">
           <h3 class="text-uppercase">LaserDB</h3>
           <p><a href="http://github.com/gzr7702/LaserDB">http://github.com/gzr7702/LaserDB</a></p>
         </div>
         <div class="col-md-4">
-          <img src="./images/555x300" class="img-responsive" alt="FroggerClone Screenshot">
+          <img src="./images/frogger.jpg" class="img-responsive" alt="FroggerClone Screenshot"data-toggle="modal" data-target="#froggerclone">
           <h3 class="text-uppercase">Frogger Clone</h3>
           <p><a href="https://github.com/gzr7702/FroggerClone">https://github.com/gzr7702/FroggerClone</a></p>
         </div>
         <div class="col-md-4">
-          <img src="./images/hockey_club.jpg" class="img-responsive" alt="Metropolitan Hockey Club Screenshot">
+          <img src="./images/hockey_club.jpg" class="img-responsive" alt="Metropolitan Hockey Club Screenshot" data-toggle="modal" data-target="#metrohockeyclub">
           <h3 class="text-uppercase">Metropolitan Hockey Club</h3>
           <p><a href="https://github.com/gzr7702/MetropolitanHockeyClub">http://github.com/gzr7702/MetropolitanHockeyClub</a></p>
         </div>
       </div>
 
     </div>
-  <!--
-  <script src="js/bootstrap.min.js'"></script>
-  -->
+
+  <!-- LaserDB Modal -->
+  <div class="modal fade" id="laserdb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">LaserDB</h4>
+        </div>
+        <div class="modal-body">
+          <a href="http://gzr7702.pythonanywhere.com"><img class="img-responsive" src="images/laserdb.jpg"></a>
+          CRUD Prototype created for a Laser company that uses Django
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
+    <!-- Frogger Clone Modal -->
+  <div class="modal fade" id="froggerclone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Frogger Clone</h4>
+        </div>
+        <div class="modal-body">
+          <a href="https://frogger-clone.herokuapp.com/"><img class="img-responsive" src="images/frogger.jpg"></a>
+          My version of the Frogger game, written in JavaScript using node.js and express as a backend.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Metro Hockey Club Modal -->
+  <div class="modal fade" id="metrohockeyclub" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Metropolitan Hockey Club</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="./images/hockey_club.jpg">
+          A basic app that can be used to track the teams of a local hockey club. Written in Flask.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>
 </html>
