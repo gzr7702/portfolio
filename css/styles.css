@@ -2,12 +2,12 @@ body {
 	font-family: 'Lato', sans-serif;
 	color:#747704;
 	font-weight: 300;
-	background-color:#DBDBE4;
+	#background-color:#DBDBE4;
 }
 
 .text-muted {
-	#color:#BCBBBB;
-	color:black;
+	color:#BCBBBB;
+	#color:black;
 }
 
 .text-thin {
